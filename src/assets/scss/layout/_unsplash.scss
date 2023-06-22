@@ -1,0 +1,85 @@
+.unsplash__wrap {
+    overflow: hidden;
+}
+.unsplash__inner {
+    height: 600px;
+    
+    .unsplash__text {
+        h3 {
+            font-size: 50px;
+            margin-bottom: 40px;
+        }
+        p {
+            font-size: 22px;
+            font-weight: 300;
+            margin-bottom: 60px;
+        }
+        a {
+            @include border(50px)
+        }
+    }
+    
+    .unsplash__item {
+        @include flex-between;
+        margin-top: 70px;
+        position: absolute;
+        
+        > div {
+            width: 400px;
+            margin-right: 10px;
+
+            
+        }
+        > div img {
+            width: 100%;
+            @include border(20px)
+        }
+    }
+}
+
+//unsplash__page
+.Unsplash__cont {
+    ul {
+        column-count: 3;
+        
+        li {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+// unsplash__search 
+.unsplash__search {
+    margin-bottom: 50px;
+    text-align: center;
+    input {
+        border: 1px solid #e8ecf2;
+        font-size: 16px;
+        padding: 10px 20px;
+        @include border(50px);
+        min-width: 300px;
+        margin-right: 10px;
+        font-family: 'aria';
+    }
+    button {
+        @include button (#f7100d, #fff);
+        @include border (50px);
+    }
+}
+
+.unsplash__tag {
+    ul {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        li {
+            a{
+                border: 1px solid #e8ecf2;
+                padding: 10px 20px;
+                margin: 0 10px;
+                color: #f7100d;
+            }
+        }
+    }
+}
