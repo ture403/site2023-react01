@@ -1,11 +1,13 @@
-import React from 'react';
-import Contents from '../layout/Contents';
-import ContTitle from '../layout/ContTitle';
+import React from "react";
+import Contents from "../layout/Contents";
+import ContTitle from "../layout/ContTitle";
+import PortText from "../port/PortText";
 
 const PortPage = () => {
   return (
     <Contents>
-      <ContTitle title="portflio" />
+      <ContTitle title="gallery" />
+      <PortText />
     </Contents>
   );
 };

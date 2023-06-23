@@ -2,54 +2,71 @@
 .youtube__wrap {
     overflow: hidden;
 }
+
 .youtube__inner {
     height: 600px;
+
     .youtube__text {
         h3 {
             font-size: 50px;
             margin-bottom: 40px;
         }
+
         p {
             font-size: 22px;
             font-weight: 300;
             margin-bottom: 60px;
         }
+
         a {
             @include border(50px)
         }
     }
-    
+
     .youtube__item {
         @include flex-between;
         position: absolute;
         margin-top: 70px;
-        
-        > div {
+
+        >div {
             margin-right: 10px;
             width: 400px;
             @include border(20px)
         }
     }
 }
+
+.youtube__slider {
+    height: 300px;
+
+    img {
+        margin: auto;
+    }
+}
+
 .youtube__tag {
     ul {
         display: flex;
         justify-content: center;
         margin-top: 100px;
         margin-bottom: 50px;
-        li {
-            a{
-                border: 1px solid #e8ecf2;
-                padding: 10px 20px;
-                margin: 0 10px;
-                color: #f7100d;
-            }
+
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            border: 1px solid #b6b3b3;
+            color: #f7100d;
+            background-color: transparent;
+            cursor: pointer;
         }
     }
 }
+
 .youtube__search {
     margin-bottom: 50px;
     text-align: center;
+
     input {
         border: 1px solid #e8ecf2;
         font-size: 16px;
@@ -58,6 +75,7 @@
         min-width: 300px;
         margin-right: 10px;
     }
+
     button {
         @include button (#f7100d, #fff);
         @include border (50px);
@@ -70,15 +88,23 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin-bottom: 100px;
+
         li {
             width: 24.3333%;
             margin-bottom: 4%;
-            span {
-                display: block;
-                margin: 4px 0;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
+
+            a {
+                :hover {
+                    transform: scale(1.2);
+                }
+
+                span {
+                    display: block;
+                    margin: 4px 0;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
             }
         }
     }

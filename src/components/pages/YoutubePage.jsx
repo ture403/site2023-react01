@@ -28,7 +28,7 @@ const YoutubePage = () => {
   return (
     <Contents>
       <ContTitle title="youtube" />
-      <YoutubeSlider />
+      <YoutubeSlider youtubes={youtubes} />
       <YoutubeSearch onSearch={search} />
       <YoutubeTag Tag={search} />
       <YoutubeCont youtubes={youtubes} />

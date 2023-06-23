@@ -1,10 +1,14 @@
-import React from 'react';
+import React from "react";
 
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function Header(props) {
   return (
-    <header id="header" className={`${props.attr[0]} ${props.attr[1]} ${props.attr[2]}`} row-lavel="1">
+    <header
+      id="header"
+      className={`${props.attr[0]} ${props.attr[1]} ${props.attr[2]}`}
+      row-lavel="1"
+    >
       <div className="header__inner container">
         <h1 className="header__logo">
           <Link to="/">
@@ -17,10 +21,7 @@ function Header(props) {
               <Link to="/intro">소개</Link>
             </li>
             <li>
-              <Link to="/member">멤버</Link>
-            </li>
-            <li>
-              <Link to="/port">포트폴리오</Link>
+              <Link to="/port">갤러리</Link>
             </li>
             <li>
               <Link to="/youtube">유튜브</Link>

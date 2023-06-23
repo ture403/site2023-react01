@@ -1,12 +1,18 @@
 import React from "react";
-const YoutubeItem = ({ youtube, key }) => {
+const YoutubeItem = ({ youtube, index }) => {
   return (
-    <li key={key}>
-      <img
-        src={youtube.snippet.thumbnails.medium.url}
-        alt={youtube.snippet.title}
-      />
-      <span>{youtube.snippet.title}</span>
+    <li key={index}>
+      <a
+        href={`https://www.youtube.com/watch?v=${youtube.id.videoId}`}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img
+          src={youtube.snippet.thumbnails.medium.url}
+          alt={youtube.snippet.title}
+        />
+        <span>{youtube.snippet.title}</span>
+      </a>
     </li>
   );
 };

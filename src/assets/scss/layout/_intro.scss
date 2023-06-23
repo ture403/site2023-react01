@@ -1,12 +1,14 @@
 // intro__wrap
 .intro__wrap {}
+
 .intro__inner {
     display: flex;
     justify-content: space-between;
 }
+
 .intro__title {
     width: 33%;
-    
+
     span {
         background-color: #FF3344;
         font-size: 14px;
@@ -17,37 +19,97 @@
         margin-bottom: 10px;
         display: inline-block;
     }
+
     h3 {
         font-size: 50px;
         font-weight: 700;
         line-height: 1.2;
         margin-bottom: 30px;
     }
+
     p {
         font-size: 18px;
         line-height: 1.5;
         font-weight: 500;
     }
 }
+
 .intro__desc {
     width: 66%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-    > div {
+    >div {
         width: 48%;
         margin-bottom: 40px;
 
         h4 {
             font-size: 24px;
-            margin-bottom: 15px;          
+            margin-bottom: 15px;
         }
-        &:nth-child(3){
+
+        &:nth-child(3) {
             margin-bottom: 0;
         }
-        &:nth-child(4){
+
+        &:nth-child(4) {
             margin-bottom: 0;
+        }
+    }
+}
+
+.intro__proflie {
+    background-image: url(../../images/intro/background.png);
+    position: relative;
+    height: 1000px;
+    width: 100%;
+
+    ::after {
+        width: 100%;
+        height: 100%;
+        content: "";
+        background-color: rgba(0, 0, 0, 0.1);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+    }
+
+    .intro__proflie__wrap {
+        padding-top: 100px;
+        padding-left: 30px;
+
+        h2 {
+            font-size: 5em;
+            padding-top: 100px;
+            color: #fff;
+            position: relative;
+            z-index: 100;
+        }
+
+        span {
+            display: block;
+            font-size: 1.8em;
+            padding-top: 40px;
+            color: #fff;
+            position: relative;
+            z-index: 100;
+            line-height: 1.8;
+        }
+
+    }
+
+    .link {
+        padding-left: 30px;
+
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 40px 10px 0px 0px;
+            background-color: #fff;
+            position: relative;
+            z-index: 100;
         }
     }
 }
