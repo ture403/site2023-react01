@@ -2,7 +2,7 @@ import React from "react";
 import { Navigation, A11y, Autoplay } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { Pagination, EffectCoverflow } from "swiper";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -22,14 +22,23 @@ const UnsplashSlider = ({ images }) => {
   return (
     <div className="unsplash__slider">
       <Swiper
-        modules={[Navigation, A11y, Autoplay]}
+        modules={[Navigation, A11y, Autoplay, Pagination, EffectCoverflow]}
         spaceBetween={0}
-        slidesPerView={3}
+        slidesPerView={5}
+        effect="coverflow"
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false,
+        }}
+        speed={700}
         navigation
         loop={true}
         autoplay={{
-          delay: 3000,
-          disableOnInteraction: true,
+          delay: 1000,
+          disableOnInteraction: false,
         }}
       >
         {images.map((img, index) => (

@@ -27,7 +27,7 @@ const YoutubeSlider = ({ youtubes }) => {
       <Swiper
         modules={[Navigation, A11y, Autoplay, Pagination, EffectCoverflow]}
         spaceBetween={0}
-        slidesPerView={3}
+        slidesPerView={5}
         effect="coverflow"
         coverflowEffect={{
           rotate: 50,
@@ -35,6 +35,8 @@ const YoutubeSlider = ({ youtubes }) => {
           depth: 100,
           modifier: 1,
           slideShadows: false,
+          width: "500px",
+          height: "500px",
         }}
         navigation
         loop={true}

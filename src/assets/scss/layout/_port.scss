@@ -63,8 +63,13 @@
 
 .port__human {
     .port__human__wrap {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+
         .imgWrap {
             width: 30%;
+            border: 2px solid #000;
             margin: 0 auto;
 
             img {
@@ -75,14 +80,13 @@
         .textWrap {
             display: flex;
             justify-content: space-between;
-            width: 100%;
-            border-top: 1px solid #000;
+            width: 60%;
+
             margin: 100px 0;
-            padding-top: 100px;
 
             .title {
                 width: 30%;
-                border-right: 2px solid blue;
+                border-right: 2px solid rgb(113, 113, 114);
                 padding: 10px;
 
                 h3 {
@@ -98,7 +102,8 @@
 
             .desc {
                 width: 73%;
-                padding: 20px;
+                padding: 30px;
+                word-wrap: keep-all;
             }
         }
     }
