@@ -1,6 +1,6 @@
 # REACT SITE
 
-<img src="public/assets/images/5.png"  width="700" height="370">
+<img src="public/assets/images/5.png"  width="1000" height="500">
 
 REACT 으로 작성한 홈페이지 입니다.
 
@@ -20,3 +20,10 @@ swiper : Swiper.js를 함께 사용하는 가장 큰 장점은 모바일 친화�
 프로젝트 실행
 ---
 npm run start
+
+# 프로젝트 목적
+
+---
+
++ 리엑트 이해
++ 리엑트 컴포넌트 구조 이해
