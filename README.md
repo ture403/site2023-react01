@@ -1,6 +1,6 @@
 # REACT SITE
 
-<img src="public/images/5.png"  width="700" height="370">
+<img src="public/assets/images/5.png"  width="700" height="370">
 
 REACT 으로 작성한 홈페이지 입니다.
 
