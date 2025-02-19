@@ -16,7 +16,7 @@ const MoviePage = () => {
 
   useEffect(() => {
     fetch(
-      "https://api.themoviedb.org/3/movie/popular?api_key=c563584131c37102f737050cd71e3fa6"
+      "https://api.themoviedb.org/3/movie/now_playing?api_key=c563584131c37102f737050cd71e3fa6&language=ko-KR"
     )
       .then((response) => response.json())
       .then((result) => setImages(result.results))
